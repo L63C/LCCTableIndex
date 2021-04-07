@@ -1,0 +1,6 @@
+framework module LCCTools {
+  umbrella header "LCCTools-umbrella.h"
+
+  export *
+  module * { export * }
+}
