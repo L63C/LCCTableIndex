@@ -8,6 +8,7 @@
 
 import UIKit
 import LCCTableIndex
+import Masonry
 class ViewController: UIViewController {
     let kCellId : String = "testCellId"
     let dataSource : Array = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
@@ -22,11 +23,26 @@ class ViewController: UIViewController {
     
     // MARK: - private methods
     func p_initView() {
+//        self.navigationController?.navigationBar.isTranslucent = false
         self.view.backgroundColor = .white
         view.addSubview(tableView)
-        tableView.addCustomIndex()
-        tableView.indexArr = indexArr
-        
+        tableView.mas_makeConstraints {
+            $0?.edges.mas_equalTo()(UIEdgeInsets.zero)
+        }
+        tableView.lc_addCustomIndex()
+        tableView.lc_indexArr = indexArr
+        NSLog("scrollIndicatorInsets-----%@",NSStringFromUIEdgeInsets(self.tableView.scrollIndicatorInsets));
+        NSLog("contentInset-----%@",NSStringFromUIEdgeInsets(self.tableView.contentInset));
+        NSLog("adjustedContentInset-----%@",NSStringFromUIEdgeInsets(self.tableView.adjustedContentInset));
+        if #available(iOS 11.1, *) {
+            NSLog("verticalScrollIndicatorInsets-----%@",NSStringFromUIEdgeInsets(self.tableView.verticalScrollIndicatorInsets))
+        } else {
+            // Fallback on earlier versions
+        };
+        NSLog("alignmentRectInsets-----%@",NSStringFromUIEdgeInsets(self.tableView.alignmentRectInsets));
+        NSLog("insetsContentViewsToSafeArea-----%d",self.tableView.insetsContentViewsToSafeArea);
+        NSLog("insetsLayoutMarginsFromSafeArea-----%d",self.tableView.insetsLayoutMarginsFromSafeArea);
+        NSLog("safeAreaInsets-----%@",NSStringFromUIEdgeInsets(self.tableView.safeAreaInsets));
     }
     // MARK: - public methods
     
@@ -35,7 +51,7 @@ class ViewController: UIViewController {
     // MARK: - getter
     
     lazy var tableView: UITableView = {
-        let tableView = UITableView.init(frame: self.view.frame, style: .grouped)
+        let tableView = UITableView.init(frame: CGRect.zero, style: .grouped)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: kCellId)

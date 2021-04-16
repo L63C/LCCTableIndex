@@ -7,12 +7,14 @@
 
 import Foundation
 import UIKit
+import LCCTools
 private var kIndexArrKey: Void?
 private var kIndexViewKey: Void?
-extension UITableView{
-   public var indexArr : [Any]?{
+
+@objc extension UITableView{
+ public var lc_indexArr : [Any]?{
         get {
-            return objc_getAssociatedObject(self, &kIndexArrKey) as? [String]
+            return objc_getAssociatedObject(self, &kIndexArrKey) as? [Any]
         }
         set {
             objc_setAssociatedObject(self, &kIndexArrKey, newValue, .OBJC_ASSOCIATION_RETAIN)
@@ -20,7 +22,7 @@ extension UITableView{
         }
     }
     
-    var tableIndexView : LCTableIndexView?{
+   var tableIndexView : LCTableIndexView?{
         get{
             objc_getAssociatedObject(self, &kIndexViewKey) as? LCTableIndexView
         }
@@ -28,10 +30,10 @@ extension UITableView{
             objc_setAssociatedObject(self, &kIndexViewKey, newValue, .OBJC_ASSOCIATION_RETAIN)
         }
     }
-    
-   public func addCustomIndex() {
+    // MARK: - Public Methods
+  public func lc_addCustomIndex() {
         guard let _ = self.superview else {
-            assert(false, "请先 addSubview")
+            assert(false, "请先将tableView 加入到父view 中")
             return
         }
         if let _ = tableIndexView{
@@ -49,16 +51,21 @@ extension UITableView{
             make?.width.mas_equalTo()(20)
         }
     }
+    public func lc_hidenIndex(_ hiden:Bool) {
+        tableIndexView?.isHidden = hiden
+    }
 }
+
+
 extension UITableView : TableIndexViewDelegate{
     
     
     func indexView(indexView: LCTableIndexView, didSelectAt row: NSInteger) {
-        if self.numberOfSections == indexArr?.count{// 带有头部
+        if self.numberOfSections == lc_indexArr?.count{// 带有头部
             self.scrollToRow(at: IndexPath.init(row: 0, section: row), at: .top, animated: false)
         }else{
             if(row == 0){
-                self.setContentOffset(CGPoint.init(x: 0, y: 0), animated: false)
+                self.setContentOffset(CGPoint.init(x: 0, y: -self.adjustedContentInset.top), animated: false)
             }else{
                 self.scrollToRow(at: IndexPath.init(row: 0, section: row-1), at: .top, animated: false)
             }
@@ -67,5 +74,6 @@ extension UITableView : TableIndexViewDelegate{
     func indexView(bindTableViewToindexView: LCTableIndexView) -> UITableView {
         return self
     }
+     
 }
 

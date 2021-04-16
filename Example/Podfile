@@ -4,7 +4,8 @@ platform :ios, '9.0'
 
 target 'LCCTableIndex_Example' do
   pod 'LCCTableIndex', :path => '../'
-
+  pod 'LCCTools',:path => '/Users/luchuan/Documents/Project/Pod/LCCTools/LCCTools.podspec'
+  
   target 'LCCTableIndex_Tests' do
     inherit! :search_paths
 

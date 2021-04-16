@@ -7,21 +7,23 @@ PODS:
 
 DEPENDENCIES:
   - LCCTableIndex (from `../`)
+  - LCCTools (from `/Users/luchuan/Documents/Project/Pod/LCCTools/LCCTools.podspec`)
 
 SPEC REPOS:
   trunk:
-    - LCCTools
     - Masonry
 
 EXTERNAL SOURCES:
   LCCTableIndex:
     :path: "../"
+  LCCTools:
+    :path: "/Users/luchuan/Documents/Project/Pod/LCCTools/LCCTools.podspec"
 
 SPEC CHECKSUMS:
   LCCTableIndex: 8b0a95dbe1aa018c9c80236664a5f2dd95912163
   LCCTools: 07dcc388afd99880779f0bec19625f97233abfc2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 124870254b144c0a0de017243150c6f24c08411d
+PODFILE CHECKSUM: c386d7b203629433c3139a299ffe6862efb0a8d2
 
 COCOAPODS: 1.10.1

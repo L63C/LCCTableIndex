@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LCCTableIndex'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'tableView 左边自定义索引，支持图片和文字'
 
 # This description is used to generate tags and improve search results.

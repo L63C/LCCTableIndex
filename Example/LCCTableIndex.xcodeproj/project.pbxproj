@@ -46,7 +46,7 @@
 		981EF39A676E1879A2389F3B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AFB328004BD981AFC96BE8AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D5EA5DE415B7A852C8B7185C /* Pods-LCCTableIndex_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCCTableIndex_Example.release.xcconfig"; path = "Target Support Files/Pods-LCCTableIndex_Example/Pods-LCCTableIndex_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D61B98967FE22430ECF7F459 /* LCCTableIndex.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LCCTableIndex.podspec; path = ../LCCTableIndex.podspec; sourceTree = "<group>"; };
+		D61B98967FE22430ECF7F459 /* LCCTableIndex.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LCCTableIndex.podspec; path = ../LCCTableIndex.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
