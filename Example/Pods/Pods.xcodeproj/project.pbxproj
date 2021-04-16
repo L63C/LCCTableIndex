@@ -802,6 +802,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		08004A5BD546A7A13145BB6CA30972A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9946D2BF570DC21D302062A4AB058531 /* LCCTableIndex.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LCCTableIndex/LCCTableIndex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LCCTableIndex/LCCTableIndex-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LCCTableIndex/LCCTableIndex.modulemap";
+				PRODUCT_MODULE_NAME = LCCTableIndex;
+				PRODUCT_NAME = LCCTableIndex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		0DA50A7AAABA4200BA6AD3C5E934B11A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A2701AE9D0EB43C049629AA825527EDA /* Pods-LCCTableIndex_Example.debug.xcconfig */;
@@ -1027,67 +1059,6 @@
 			};
 			name = Release;
 		};
-		77F936D2F57EC7094AADDB217D824D03 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9946D2BF570DC21D302062A4AB058531 /* LCCTableIndex.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LCCTableIndex/LCCTableIndex-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LCCTableIndex/LCCTableIndex-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LCCTableIndex/LCCTableIndex.modulemap";
-				PRODUCT_MODULE_NAME = LCCTableIndex;
-				PRODUCT_NAME = LCCTableIndex;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8EA033D8870AFB6F4986A637FAC59F00 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1777C4F097518269E559A6A639A181CE /* LCCTableIndex.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LCCTableIndex/LCCTableIndex-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LCCTableIndex/LCCTableIndex-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LCCTableIndex/LCCTableIndex.modulemap";
-				PRODUCT_MODULE_NAME = LCCTableIndex;
-				PRODUCT_NAME = LCCTableIndex;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		9B4B69D95AA08C8DE7BDE85196372A2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17A3DB449721211B58C8B2D7ED40E5E7 /* LCCTools.release.xcconfig */;
@@ -1211,6 +1182,37 @@
 			};
 			name = Release;
 		};
+		D10793A1F16BFCD5CBDD655C0F238C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1777C4F097518269E559A6A639A181CE /* LCCTableIndex.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LCCTableIndex/LCCTableIndex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LCCTableIndex/LCCTableIndex-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LCCTableIndex/LCCTableIndex.modulemap";
+				PRODUCT_MODULE_NAME = LCCTableIndex;
+				PRODUCT_NAME = LCCTableIndex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D3A9C693177FE8368BC3D92D71259D11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B5578A16453C34EE9E7FD9CA066D519 /* Pods-LCCTableIndex_Tests.debug.xcconfig */;
@@ -1285,8 +1287,8 @@
 		A96BA5CD827EE9624D8395D9736825A9 /* Build configuration list for PBXNativeTarget "LCCTableIndex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8EA033D8870AFB6F4986A637FAC59F00 /* Debug */,
-				77F936D2F57EC7094AADDB217D824D03 /* Release */,
+				D10793A1F16BFCD5CBDD655C0F238C3D /* Debug */,
+				08004A5BD546A7A13145BB6CA30972A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

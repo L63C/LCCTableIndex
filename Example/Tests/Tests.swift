@@ -1,5 +1,4 @@
 import XCTest
-import LCCTableIndex
 
 class Tests: XCTestCase {
     

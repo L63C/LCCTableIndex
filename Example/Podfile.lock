@@ -1,8 +1,8 @@
 PODS:
-  - LCCTableIndex (0.1.0):
+  - LCCTableIndex (0.1.1):
     - LCCTools
     - Masonry
-  - LCCTools (0.1.0)
+  - LCCTools (0.1.1)
   - Masonry (1.1.0)
 
 DEPENDENCIES:
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
     :path: "/Users/luchuan/Documents/Project/Pod/LCCTools/LCCTools.podspec"
 
 SPEC CHECKSUMS:
-  LCCTableIndex: 8b0a95dbe1aa018c9c80236664a5f2dd95912163
-  LCCTools: 07dcc388afd99880779f0bec19625f97233abfc2
+  LCCTableIndex: a7c0055b27719183c300dbf73379ccbbfaf8533d
+  LCCTools: f7ba4e5ac7ecf51e447a8457d913d172e63a69c1
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
 PODFILE CHECKSUM: c386d7b203629433c3139a299ffe6862efb0a8d2
